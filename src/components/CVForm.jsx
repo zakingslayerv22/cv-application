@@ -62,6 +62,67 @@ export default function CVForm() {
           onChange={(e) => handleChange(e, data[0].id)}
         />
         <hr />
+
+        <hr />
+        <h3>{data[1].sectionTitle}</h3>
+        <InputField
+          labelName="School Name"
+          inputName="schoolName"
+          value={data[1].schoolName}
+          onChange={(e) => handleChange(e, data[1].id)}
+        />
+        <InputField
+          labelName="Course"
+          inputName="course"
+          value={data[1].course}
+          onChange={(e) => handleChange(e, data[1].id)}
+        />
+        <InputField
+          labelName="Date of Graduation"
+          type="date"
+          inputName="dateOfGraduation"
+          value={data[1].dateOfGraduation}
+          onChange={(e) => handleChange(e, data[1].id)}
+        />
+        <hr />
+        <h3>{data[2].sectionTitle}</h3>
+        <InputField
+          labelName="From"
+          type="date"
+          inputName="from"
+          value={data[2].from}
+          onChange={(e) => handleChange(e, data[2].id)}
+        />
+        <InputField
+          labelName="To"
+          type="date"
+          inputName="to"
+          value={data[2].to}
+          onChange={(e) => handleChange(e, data[2].id)}
+        />
+        <InputField
+          labelName="Company Name"
+          type="text"
+          inputName="companyName"
+          value={data[2].companyName}
+          onChange={(e) => handleChange(e, data[2].id)}
+        />
+
+        <InputField
+          labelName="Position Title"
+          type="text"
+          inputName="positionTitle"
+          value={data[2].positionTitle}
+          onChange={(e) => handleChange(e, data[2].id)}
+        />
+
+        <InputField
+          labelName="Responsibilities"
+          textArea={true}
+          inputName="responsibilities"
+          value={data[2].responsibilities}
+          onChange={(e) => handleChange(e, data[2].id)}
+        />
         <br />
         <button type="submit">Submit</button>
       </form>
