@@ -1,9 +1,11 @@
 import { useState } from "react";
 import InputField from "./Input";
 import { categories } from "../assets/CVData";
+import CVDisplay from "./CVDisplay";
 
 export default function CVForm() {
   const [data, setData] = useState(categories);
+  const [isSent, setIsSent] = useState(false);
 
   const handleChange = (e, idToUpdate) => {
     const { name, value } = e.target;
@@ -15,10 +17,23 @@ export default function CVForm() {
     );
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSent(true);
+  };
+
+  const handleEdit = () => {
+    setIsSent(false);
+  };
+
+  if (isSent) {
+    return <CVDisplay CVDataArray={data} handleEdit={handleEdit} />;
+  }
+
   console.log(data);
   return (
     <>
-      <form action="">
+      <form action="" onSubmit={handleSubmit}>
         <h3>{data[0].sectionTitle}</h3>
         <InputField
           key={data[0].id}
