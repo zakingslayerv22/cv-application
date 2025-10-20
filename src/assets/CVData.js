@@ -14,6 +14,7 @@ export const categories = [
     sectionTitle: "Education",
     schoolName: "",
     course: "",
+    certificateObtained: "",
     dateOfGraduation: "",
   },
   {

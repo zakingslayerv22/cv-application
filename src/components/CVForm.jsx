@@ -34,71 +34,81 @@ export default function CVForm() {
   return (
     <>
       <form action="" onSubmit={handleSubmit}>
-        <h3>{data[0].sectionTitle}</h3>
-        <InputField
-          key={data[0].id}
-          labelName="First Name"
-          inputName="firstName"
-          value={data[0].firstName}
-          onChange={(e) => handleChange(e, data[0].id)}
-        />
-        <InputField
-          labelName="Last Name"
-          inputName="lastName"
-          value={data[0].lastName}
-          onChange={(e) => handleChange(e, data[0].id)}
-        />
-        <InputField
-          labelName="Age"
-          type="number"
-          inputName="age"
-          value={data[0].age}
-          onChange={(e) => handleChange(e, data[0].id)}
-        />
-        <InputField
-          labelName="Sex"
-          inputName="sex"
-          value={data[0].sex}
-          onChange={(e) => handleChange(e, data[0].id)}
-        />
-        <InputField
-          labelName="Email"
-          type="email"
-          inputName="email"
-          value={data[0].email}
-          onChange={(e) => handleChange(e, data[0].id)}
-        />
+        <section className="basic-info">
+          <h3>{data[0].sectionTitle}</h3>
+          <InputField
+            key={data[0].id}
+            labelName="First Name"
+            inputName="firstName"
+            value={data[0].firstName}
+            onChange={(e) => handleChange(e, data[0].id)}
+          />
+          <InputField
+            labelName="Last Name"
+            inputName="lastName"
+            value={data[0].lastName}
+            onChange={(e) => handleChange(e, data[0].id)}
+          />
+          <InputField
+            labelName="Age"
+            type="number"
+            inputName="age"
+            value={data[0].age}
+            onChange={(e) => handleChange(e, data[0].id)}
+          />
+          <InputField
+            labelName="Sex"
+            inputName="sex"
+            value={data[0].sex}
+            onChange={(e) => handleChange(e, data[0].id)}
+          />
+          <InputField
+            labelName="Email"
+            type="email"
+            inputName="email"
+            value={data[0].email}
+            onChange={(e) => handleChange(e, data[0].id)}
+          />
 
-        <InputField
-          labelName="Phone Number"
-          type="tel"
-          inputName="phoneNumber"
-          value={data[0].phoneNumber}
-          onChange={(e) => handleChange(e, data[0].id)}
-        />
+          <InputField
+            labelName="Phone Number"
+            type="tel"
+            inputName="phoneNumber"
+            value={data[0].phoneNumber}
+            onChange={(e) => handleChange(e, data[0].id)}
+          />
+        </section>
         <hr />
 
         <hr />
-        <h3>{data[1].sectionTitle}</h3>
-        <InputField
-          labelName="School Name"
-          inputName="schoolName"
-          value={data[1].schoolName}
-          onChange={(e) => handleChange(e, data[1].id)}
-        />
-        <InputField
-          labelName="Course"
-          inputName="course"
-          value={data[1].course}
-          onChange={(e) => handleChange(e, data[1].id)}
-        />
-        <InputField
-          labelName="Date of Graduation"
-          type="date"
-          inputName="dateOfGraduation"
-          value={data[1].dateOfGraduation}
-          onChange={(e) => handleChange(e, data[1].id)}
-        />
+        <section className="education-info">
+          <h3>{data[1].sectionTitle}</h3>
+          <InputField
+            labelName="School Name"
+            inputName="schoolName"
+            value={data[1].schoolName}
+            onChange={(e) => handleChange(e, data[1].id)}
+          />
+          <InputField
+            labelName="Course"
+            inputName="course"
+            value={data[1].course}
+            onChange={(e) => handleChange(e, data[1].id)}
+          />
+          <InputField
+            labelName="Certificate Obtained"
+            inputName="certificateObtained"
+            value={data[1].certificateObtained}
+            onChange={(e) => handleChange(e, data[1].id)}
+          />
+          <InputField
+            labelName="Date of Graduation"
+            type="date"
+            inputName="dateOfGraduation"
+            value={data[1].dateOfGraduation}
+            onChange={(e) => handleChange(e, data[1].id)}
+          />
+        </section>
         <hr />
         <h3>{data[2].sectionTitle}</h3>
         <InputField

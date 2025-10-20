@@ -19,7 +19,9 @@ export default function CVDisplay({ CVDataArray, handleEdit }) {
         <div>
           {CVDataArray[1].dateOfGraduation} | {CVDataArray[1].schoolName}
         </div>
-        <div>{CVDataArray[1].course}</div>
+        <div>
+          {CVDataArray[1].course} | {CVDataArray[1].certificateObtained}
+        </div>
       </section>
       <hr />
       <section className="work-experience">
