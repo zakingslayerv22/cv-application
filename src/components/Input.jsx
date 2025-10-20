@@ -19,6 +19,7 @@ export default function InputField({
               onChange={onChange}
               rows="5"
               cols="33"
+              required
             ></textarea>
           </label>
         </>
@@ -31,6 +32,7 @@ export default function InputField({
               name={inputName}
               value={value}
               onChange={onChange}
+              required
             />
           </label>
           <br />
