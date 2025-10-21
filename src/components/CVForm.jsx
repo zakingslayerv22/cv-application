@@ -32,7 +32,12 @@ export default function CVForm() {
 
   console.log(data);
   return (
-    <>
+    <section className="form-body">
+      <section className="heading">
+        <h2>Resume Generator</h2>
+        <p>Generate your resume in one click!</p>
+        <p>All fields are required.</p>
+      </section>
       <form action="" onSubmit={handleSubmit}>
         <section className="basic-info">
           <h3>{data[0].sectionTitle}</h3>
@@ -151,6 +156,6 @@ export default function CVForm() {
         <br />
         <button type="submit">Submit</button>
       </form>
-    </>
+    </section>
   );
 }

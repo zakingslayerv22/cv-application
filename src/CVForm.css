@@ -1,0 +1,22 @@
+.form-body {
+  font-size: 1.2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input {
+  width: 85vw;
+  font-size: inherit;
+  padding: 0.6rem;
+  border: 1px solid black;
+}
+
+label {
+  display: block;
+}
+
+.heading {
+  text-align: center;
+}

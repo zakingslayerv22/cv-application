@@ -10,31 +10,28 @@ export default function InputField({
     <>
       {textArea ? (
         <>
-          <label htmlFor="">
-            {labelName}{" "}
-            <textarea
-              type={type}
-              name={inputName}
-              value={value}
-              onChange={onChange}
-              rows="5"
-              cols="33"
-              required
-            ></textarea>
-          </label>
+          <label htmlFor="">{labelName} </label>
+          <textarea
+            type={type}
+            name={inputName}
+            value={value}
+            onChange={onChange}
+            rows="5"
+            cols="33"
+            required
+          ></textarea>
         </>
       ) : (
         <>
-          <label htmlFor="">
-            {labelName}{" "}
-            <input
-              type={type}
-              name={inputName}
-              value={value}
-              onChange={onChange}
-              required
-            />
-          </label>
+          <label htmlFor="">{labelName} </label>
+          <input
+            type={type}
+            name={inputName}
+            value={value}
+            onChange={onChange}
+            required
+          />
+
           <br />
         </>
       )}
