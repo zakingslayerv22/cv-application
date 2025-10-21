@@ -40,7 +40,7 @@ export default function CVForm() {
       </section>
       <form action="" onSubmit={handleSubmit}>
         <section className="basic-info">
-          <h3>{data[0].sectionTitle}</h3>
+          <h3 className="section-title">{data[0].sectionTitle}</h3>
           <InputField
             key={data[0].id}
             labelName="First Name"
@@ -87,7 +87,7 @@ export default function CVForm() {
 
         <hr />
         <section className="education-info">
-          <h3>{data[1].sectionTitle}</h3>
+          <h3 className="section-title">{data[1].sectionTitle}</h3>
           <InputField
             labelName="School Name"
             inputName="schoolName"
@@ -115,44 +115,46 @@ export default function CVForm() {
           />
         </section>
         <hr />
-        <h3>{data[2].sectionTitle}</h3>
-        <InputField
-          labelName="From"
-          type="date"
-          inputName="from"
-          value={data[2].from}
-          onChange={(e) => handleChange(e, data[2].id)}
-        />
-        <InputField
-          labelName="To"
-          type="date"
-          inputName="to"
-          value={data[2].to}
-          onChange={(e) => handleChange(e, data[2].id)}
-        />
-        <InputField
-          labelName="Company Name"
-          type="text"
-          inputName="companyName"
-          value={data[2].companyName}
-          onChange={(e) => handleChange(e, data[2].id)}
-        />
+        <section className="work-experience-info">
+          <h3 className="section-title">{data[2].sectionTitle}</h3>
+          <InputField
+            labelName="From"
+            type="date"
+            inputName="from"
+            value={data[2].from}
+            onChange={(e) => handleChange(e, data[2].id)}
+          />
+          <InputField
+            labelName="To"
+            type="date"
+            inputName="to"
+            value={data[2].to}
+            onChange={(e) => handleChange(e, data[2].id)}
+          />
+          <InputField
+            labelName="Company Name"
+            type="text"
+            inputName="companyName"
+            value={data[2].companyName}
+            onChange={(e) => handleChange(e, data[2].id)}
+          />
 
-        <InputField
-          labelName="Position Title"
-          type="text"
-          inputName="positionTitle"
-          value={data[2].positionTitle}
-          onChange={(e) => handleChange(e, data[2].id)}
-        />
+          <InputField
+            labelName="Position Title"
+            type="text"
+            inputName="positionTitle"
+            value={data[2].positionTitle}
+            onChange={(e) => handleChange(e, data[2].id)}
+          />
 
-        <InputField
-          labelName="Responsibilities"
-          textArea={true}
-          inputName="responsibilities"
-          value={data[2].responsibilities}
-          onChange={(e) => handleChange(e, data[2].id)}
-        />
+          <InputField
+            labelName="Responsibilities"
+            textArea={true}
+            inputName="responsibilities"
+            value={data[2].responsibilities}
+            onChange={(e) => handleChange(e, data[2].id)}
+          />
+        </section>
         <br />
         <button type="submit">Submit</button>
       </form>

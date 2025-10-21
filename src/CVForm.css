@@ -2,6 +2,7 @@
   font-size: 1.2rem;
   padding: 2rem;
   display: flex;
+  gap: 2rem;
   flex-direction: column;
   justify-content: center;
 }
@@ -11,6 +12,8 @@ input {
   font-size: inherit;
   padding: 0.6rem;
   border: 1px solid black;
+  border-radius: 20px;
+  outline: none;
 }
 
 label {
@@ -19,4 +22,15 @@ label {
 
 .heading {
   text-align: center;
+}
+
+.basic-info,
+.education-info,
+.work-experience-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  padding-bottom: 1rem;
 }
