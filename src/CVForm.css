@@ -6,6 +6,7 @@
 .form-body {
   font-size: 1.2rem;
   padding: 0.9rem;
+  margin: auto;
   display: flex;
   gap: 1.8rem;
   flex-direction: column;
@@ -21,7 +22,7 @@ form {
 
 input,
 textarea {
-  width: 85vw;
+  width: 100%;
   font-size: inherit;
   padding: 0.6rem;
   border: 1px solid black;
@@ -33,6 +34,7 @@ textarea {
 label {
   display: block;
   font-family: Alegreya Sans SC, "Arial Narrow", Arial, sans-serif;
+  padding-top: 1.2rem;
 }
 
 .heading {
@@ -53,5 +55,28 @@ label {
 }
 
 .section-title {
-  padding-bottom: 1rem;
+  padding-bottom: 0.3rem;
+}
+
+@media (min-width: 600px) {
+  .subsection {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .subsection > div {
+    flex: 1;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .form-body {
+    width: clamp(70vw, 75vw, 80vw);
+  }
+}
+
+@media (min-width: 1000px) {
+  .form-body {
+    max-width: 60vw;
+  }
 }
