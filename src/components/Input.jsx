@@ -9,7 +9,7 @@ export default function InputField({
   return (
     <>
       {textArea ? (
-        <>
+        <div>
           <label htmlFor="">{labelName} </label>
           <textarea
             type={type}
@@ -20,9 +20,9 @@ export default function InputField({
             cols="33"
             required
           ></textarea>
-        </>
+        </div>
       ) : (
-        <>
+        <div>
           <label htmlFor="">{labelName} </label>
           <input
             type={type}
@@ -31,9 +31,7 @@ export default function InputField({
             onChange={onChange}
             required
           />
-
-          <br />
-        </>
+        </div>
       )}
     </>
   );

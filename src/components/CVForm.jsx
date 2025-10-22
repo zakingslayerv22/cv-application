@@ -41,47 +41,54 @@ export default function CVForm() {
       <form action="" onSubmit={handleSubmit}>
         <section className="basic-info">
           <h3 className="section-title">{data[0].sectionTitle}</h3>
-          <InputField
-            key={data[0].id}
-            labelName="First Name"
-            inputName="firstName"
-            value={data[0].firstName}
-            onChange={(e) => handleChange(e, data[0].id)}
-          />
-          <InputField
-            labelName="Last Name"
-            inputName="lastName"
-            value={data[0].lastName}
-            onChange={(e) => handleChange(e, data[0].id)}
-          />
-          <InputField
-            labelName="Age"
-            type="number"
-            inputName="age"
-            value={data[0].age}
-            onChange={(e) => handleChange(e, data[0].id)}
-          />
-          <InputField
-            labelName="Sex"
-            inputName="sex"
-            value={data[0].sex}
-            onChange={(e) => handleChange(e, data[0].id)}
-          />
-          <InputField
-            labelName="Email"
-            type="email"
-            inputName="email"
-            value={data[0].email}
-            onChange={(e) => handleChange(e, data[0].id)}
-          />
+          <section className="subsection">
+            <InputField
+              key={data[0].id}
+              labelName="First Name"
+              inputName="firstName"
+              value={data[0].firstName}
+              onChange={(e) => handleChange(e, data[0].id)}
+            />
+            <InputField
+              labelName="Last Name"
+              inputName="lastName"
+              value={data[0].lastName}
+              onChange={(e) => handleChange(e, data[0].id)}
+            />
+          </section>
 
-          <InputField
-            labelName="Phone Number"
-            type="tel"
-            inputName="phoneNumber"
-            value={data[0].phoneNumber}
-            onChange={(e) => handleChange(e, data[0].id)}
-          />
+          <section className="subsection">
+            <InputField
+              labelName="Age"
+              type="number"
+              inputName="age"
+              value={data[0].age}
+              onChange={(e) => handleChange(e, data[0].id)}
+            />
+            <InputField
+              labelName="Sex"
+              inputName="sex"
+              value={data[0].sex}
+              onChange={(e) => handleChange(e, data[0].id)}
+            />
+          </section>
+          <section className="subsection">
+            <InputField
+              labelName="Email"
+              type="email"
+              inputName="email"
+              value={data[0].email}
+              onChange={(e) => handleChange(e, data[0].id)}
+            />
+
+            <InputField
+              labelName="Phone Number"
+              type="tel"
+              inputName="phoneNumber"
+              value={data[0].phoneNumber}
+              onChange={(e) => handleChange(e, data[0].id)}
+            />
+          </section>
         </section>
 
         <section className="education-info">
@@ -115,20 +122,22 @@ export default function CVForm() {
 
         <section className="work-experience-info">
           <h3 className="section-title">{data[2].sectionTitle}</h3>
-          <InputField
-            labelName="From"
-            type="date"
-            inputName="from"
-            value={data[2].from}
-            onChange={(e) => handleChange(e, data[2].id)}
-          />
-          <InputField
-            labelName="To"
-            type="date"
-            inputName="to"
-            value={data[2].to}
-            onChange={(e) => handleChange(e, data[2].id)}
-          />
+          <section className="subsection">
+            <InputField
+              labelName="From"
+              type="date"
+              inputName="from"
+              value={data[2].from}
+              onChange={(e) => handleChange(e, data[2].id)}
+            />
+            <InputField
+              labelName="To"
+              type="date"
+              inputName="to"
+              value={data[2].to}
+              onChange={(e) => handleChange(e, data[2].id)}
+            />
+          </section>
           <InputField
             labelName="Company Name"
             type="text"
