@@ -83,9 +83,7 @@ export default function CVForm() {
             onChange={(e) => handleChange(e, data[0].id)}
           />
         </section>
-        <hr />
 
-        <hr />
         <section className="education-info">
           <h3 className="section-title">{data[1].sectionTitle}</h3>
           <InputField
@@ -114,7 +112,7 @@ export default function CVForm() {
             onChange={(e) => handleChange(e, data[1].id)}
           />
         </section>
-        <hr />
+
         <section className="work-experience-info">
           <h3 className="section-title">{data[2].sectionTitle}</h3>
           <InputField
@@ -155,7 +153,7 @@ export default function CVForm() {
             onChange={(e) => handleChange(e, data[2].id)}
           />
         </section>
-        <br />
+
         <button type="submit">Submit</button>
       </form>
     </section>
