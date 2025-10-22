@@ -154,7 +154,7 @@ export default function CVForm() {
           />
         </section>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Generate</button>
       </form>
     </section>
   );
