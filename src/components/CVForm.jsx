@@ -57,22 +57,6 @@ export default function CVForm() {
             />
           </section>
 
-          <section className="subsection">
-            <InputField
-              labelName="Age"
-              type="number"
-              inputName="age"
-              value={data[0].age}
-              onChange={(e) => handleChange(e, data[0].id)}
-            />
-            <InputField
-              labelName="Sex"
-              inputName="sex"
-              value={data[0].sex}
-              onChange={(e) => handleChange(e, data[0].id)}
-            />
-          </section>
-
           <InputField
             labelName="Email"
             type="email"

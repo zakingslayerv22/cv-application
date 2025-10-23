@@ -4,8 +4,6 @@ export const categories = [
     sectionTitle: "Basic Information",
     firstName: "",
     lastName: "",
-    age: "",
-    sex: "",
     email: "",
     phoneNumber: "",
     address: "",
