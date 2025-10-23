@@ -88,6 +88,14 @@ export default function CVForm() {
             value={data[0].phoneNumber}
             onChange={(e) => handleChange(e, data[0].id)}
           />
+
+          <InputField
+            labelName="Address"
+            type="text"
+            inputName="address"
+            value={data[0].address}
+            onChange={(e) => handleChange(e, data[0].id)}
+          />
         </section>
 
         <section className="education-info">
@@ -96,6 +104,12 @@ export default function CVForm() {
             labelName="School Name"
             inputName="schoolName"
             value={data[1].schoolName}
+            onChange={(e) => handleChange(e, data[1].id)}
+          />
+          <InputField
+            labelName="City/Country"
+            inputName="location"
+            value={data[1].location}
             onChange={(e) => handleChange(e, data[1].id)}
           />
           <InputField
@@ -142,6 +156,13 @@ export default function CVForm() {
             type="text"
             inputName="companyName"
             value={data[2].companyName}
+            onChange={(e) => handleChange(e, data[2].id)}
+          />
+          <InputField
+            labelName="City/Country"
+            type="text"
+            inputName="location"
+            value={data[2].location}
             onChange={(e) => handleChange(e, data[2].id)}
           />
 
