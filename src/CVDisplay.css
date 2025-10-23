@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.basic-information {
+  background: #0e374e;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}

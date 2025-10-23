@@ -1,17 +1,17 @@
 export default function CVDisplay({ CVDataArray, handleEdit }) {
   return (
-    <>
-      <section className="basic-info">
-        <h3>{CVDataArray[0].sectionTitle}</h3>
-        <div>
+    <div className="container">
+      <section className="basic-information">
+        <h2>
           {CVDataArray[0].firstName} {CVDataArray[0].lastName}
+        </h2>
+        <div>
+          {CVDataArray[0].age} | {CVDataArray[0].sex}
         </div>
         <div>
           {CVDataArray[0].email} | {CVDataArray[0].phoneNumber}
         </div>
-        <div>
-          {CVDataArray[0].age} | {CVDataArray[0].sex}
-        </div>
+        <div>{CVDataArray[0].address}</div>
       </section>
       <hr />
       <section className="educational-qualifications">
@@ -36,6 +36,6 @@ export default function CVDisplay({ CVDataArray, handleEdit }) {
       </section>
       <br />
       <button onClick={handleEdit}>Edit</button>
-    </>
+    </div>
   );
 }
