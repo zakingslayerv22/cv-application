@@ -2,7 +2,7 @@
 .basic-information,
 .educational-qualifications,
 .education-details,
-.education-details > div:nth-child(2) {
+.education-details > div {
   display: flex;
   flex-direction: column;
 }
@@ -19,7 +19,8 @@
 }
 
 .basic-information,
-.educational-qualifications {
+.educational-qualifications,
+.work-experience {
   text-align: center;
 }
 
@@ -51,6 +52,6 @@ img {
   padding: 0px 2rem;
 }
 
-.education-details > div:nth-child(2) {
+.education-details > div {
   gap: 0.3rem;
 }
