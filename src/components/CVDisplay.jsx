@@ -28,25 +28,34 @@ export default function CVDisplay({ CVDataArray, handleEdit }) {
         <h3 className="title-of-section">{CVDataArray[1].sectionTitle}</h3>
         <div className="education-details">
           <div>
-            {CVDataArray[1].location} | {CVDataArray[1].dateOfGraduation}
+            <div>{CVDataArray[1].location} </div>
+            <div> {CVDataArray[1].dateOfGraduation}</div>
           </div>
           <div>
-            <strong>{CVDataArray[1].schoolName}</strong>
-            <strong>{CVDataArray[1].course}</strong>
+            <div>
+              <strong>{CVDataArray[1].schoolName}</strong>
+            </div>
+            <div>
+              <strong>{CVDataArray[1].course}</strong>
+            </div>
 
-            {CVDataArray[1].certificateObtained}
+            <div>{CVDataArray[1].certificateObtained}</div>
           </div>
         </div>
       </section>
       <section className="work-experience">
-        <h3>{CVDataArray[2].sectionTitle}</h3>
+        <h3 className="title-of-section">{CVDataArray[2].sectionTitle}</h3>
         <div>
-          {CVDataArray[2].from} - {CVDataArray[2].to}
+          <div> {CVDataArray[2].location}</div>
+          <div>
+            {CVDataArray[2].from} - {CVDataArray[2].to}
+          </div>
         </div>
         <div>
-          {CVDataArray[2].companyName} | {CVDataArray[2].positionTitle}
+          <div>{CVDataArray[2].companyName}</div>
+          <div>{CVDataArray[2].positionTitle}</div>
+          <div>{CVDataArray[2].responsibilities}</div>
         </div>
-        <div>{CVDataArray[2].responsibilities}</div>
       </section>
       <br />
       <button onClick={handleEdit}>Edit</button>
