@@ -4,8 +4,25 @@
 }
 
 .basic-information {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
   background: #0e374e;
   color: white;
   text-align: center;
   padding: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+.email-and-phone {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+img {
+  display: none;
 }
