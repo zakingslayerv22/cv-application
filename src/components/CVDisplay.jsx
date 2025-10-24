@@ -1,3 +1,7 @@
+import emailIcon from "../assets/images/icons/email.svg";
+import phoneIcon from "../assets/images/icons/phone.svg";
+import locationIcon from "../assets/images/icons/map-marker-radius.svg";
+
 export default function CVDisplay({ CVDataArray, handleEdit }) {
   return (
     <div className="container">
@@ -5,10 +9,20 @@ export default function CVDisplay({ CVDataArray, handleEdit }) {
         <h2>
           {CVDataArray[0].firstName} {CVDataArray[0].lastName}
         </h2>
-        <div>
-          {CVDataArray[0].email} | {CVDataArray[0].phoneNumber}
+        <div className="email-and-phone">
+          <div className="details-container">
+            <img src={emailIcon} className="icon" alt="email-icon" />
+            <div>{CVDataArray[0].email}</div>
+          </div>
+          <div className="details-container">
+            <img src={phoneIcon} className="icon" alt="phone-icon" />
+            <div>{CVDataArray[0].phoneNumber}</div>
+          </div>
         </div>
-        <div>{CVDataArray[0].address}</div>
+        <div className="details-container">
+          <img src={locationIcon} className="icon" alt="location-icon" />
+          <div>{CVDataArray[0].address}</div>
+        </div>
       </section>
       <hr />
       <section className="educational-qualifications">
