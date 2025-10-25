@@ -2,7 +2,10 @@
 .basic-information,
 .educational-qualifications,
 .education-details,
-.education-details > div {
+.education-details > div,
+.work-experience,
+.work-details,
+.work-details > div {
   display: flex;
   flex-direction: column;
 }
@@ -24,7 +27,8 @@
   text-align: center;
 }
 
-.educational-qualifications {
+.educational-qualifications,
+.work-experience {
   gap: 0.7rem;
 }
 
@@ -47,11 +51,13 @@ img {
   padding: 0.7rem;
 }
 
-.education-details {
+.education-details,
+.work-details {
   gap: 0.3rem;
   padding: 0px 2rem;
 }
 
-.education-details > div {
+.education-details > div,
+.work-details > div {
   gap: 0.3rem;
 }

@@ -45,16 +45,22 @@ export default function CVDisplay({ CVDataArray, handleEdit }) {
       </section>
       <section className="work-experience">
         <h3 className="title-of-section">{CVDataArray[2].sectionTitle}</h3>
-        <div>
-          <div> {CVDataArray[2].location}</div>
+        <div className="work-details">
           <div>
-            {CVDataArray[2].from} - {CVDataArray[2].to}
+            <div> {CVDataArray[2].location}</div>
+            <div>
+              {CVDataArray[2].from} - {CVDataArray[2].to}
+            </div>
           </div>
-        </div>
-        <div>
-          <div>{CVDataArray[2].companyName}</div>
-          <div>{CVDataArray[2].positionTitle}</div>
-          <div>{CVDataArray[2].responsibilities}</div>
+          <div>
+            <div>
+              <strong>{CVDataArray[2].companyName}</strong>
+            </div>
+            <div>
+              <strong>{CVDataArray[2].positionTitle}</strong>
+            </div>
+            <div>{CVDataArray[2].responsibilities}</div>
+          </div>
         </div>
       </section>
       <br />
