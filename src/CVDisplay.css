@@ -1,4 +1,5 @@
 .container,
+.container > div,
 .basic-information,
 .educational-qualifications,
 .education-details,
@@ -12,6 +13,13 @@
 
 .container {
   gap: 2.2rem;
+  min-height: 100vh;
+  padding-bottom: 1rem;
+}
+
+.container > div {
+  gap: 2rem;
+  flex-grow: 1;
 }
 
 .basic-information {
@@ -47,15 +55,21 @@ img {
 .title-of-section {
   background-color: #eef1f3;
   padding: 0.7rem 0 0.7rem 2rem;
+  margin: 0 1rem;
 }
 
 .education-details,
 .work-details {
   gap: 0.3rem;
-  padding: 0px 3rem;
+  padding: 0px 2.7rem;
 }
 
 .education-details > div,
 .work-details > div {
   gap: 0.3rem;
+}
+
+.edit-button {
+  width: 90%;
+  margin: 0 auto;
 }
