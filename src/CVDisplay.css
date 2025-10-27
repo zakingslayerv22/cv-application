@@ -56,7 +56,7 @@ img {
 .title-of-section {
   background-color: #eef1f3;
   padding: 0.7rem 0 0.7rem 2rem;
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
 }
 
 .education-details,
@@ -68,6 +68,11 @@ img {
 .education-details > div,
 .work-details > div {
   gap: 0.3rem;
+}
+
+.from-and-to {
+  display: flex;
+  gap: 0.2rem;
 }
 
 .edit-button {
@@ -91,12 +96,51 @@ img {
 
   .details-container {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     gap: 0.4rem;
   }
 
   .details-container > div {
     align-self: center;
+  }
+
+  .title-of-section {
+    margin: 0;
+  }
+
+  .education-details,
+  .work-details {
+    padding: 0px 2rem;
+    flex-direction: row;
+    gap: 2.8rem;
+  }
+
+  .education-details > div:nth-child(2),
+  .work-details > div:nth-child(2) {
+    flex: 1;
+  }
+
+  .graduation-date {
+    margin: 0 auto;
+  }
+
+  .from-and-to {
+    display: flex;
+    flex-direction: column;
+    gap: 0.18rem;
+    align-items: center;
+  }
+
+  .dash {
+    margin: 0 auto;
+  }
+
+  .dash > span {
+    display: none;
+  }
+
+  .dash::after {
+    content: "to";
   }
 }
 
