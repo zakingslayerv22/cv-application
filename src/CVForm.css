@@ -69,6 +69,7 @@ label {
 
 form > button {
   background-color: white;
+  color: black;
 }
 
 @media (min-width: 600px) {
