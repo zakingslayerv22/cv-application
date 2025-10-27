@@ -67,6 +67,10 @@ label {
   padding-bottom: 0.3rem;
 }
 
+form > button {
+  background-color: white;
+}
+
 @media (min-width: 600px) {
   .subsection {
     display: flex;

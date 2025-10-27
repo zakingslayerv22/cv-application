@@ -13,8 +13,8 @@ export const categories = [
     sectionTitle: "Education",
     schoolName: "Lin Kuei Clan",
     location: "China, Earthrealm.",
-    course: "Assasination and Cyromancy",
-    certificateObtained: "Grandmaster of the Lin Kuei",
+    course: "Assasination and Cryomancy",
+    certificateObtained: "Grandmaster of the Lin Kuei Clan",
     dateOfGraduation: "2021-10-10",
   },
   {

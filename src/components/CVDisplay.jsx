@@ -55,7 +55,7 @@ export default function CVDisplay({ CVDataArray, handleEdit }) {
               <div className="from-and-to">
                 <span className="from"> {CVDataArray[2].from} </span>
                 <p className="dash">
-                  <span>-</span>
+                  <span>–</span>
                 </p>{" "}
                 <span className="to"> {CVDataArray[2].to}</span>
               </div>
