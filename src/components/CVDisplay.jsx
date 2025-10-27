@@ -30,7 +30,10 @@ export default function CVDisplay({ CVDataArray, handleEdit }) {
           <div className="education-details">
             <div>
               <div>{CVDataArray[1].location} </div>
-              <div> {CVDataArray[1].dateOfGraduation}</div>
+              <div className="graduation-date">
+                {" "}
+                {CVDataArray[1].dateOfGraduation}
+              </div>
             </div>
             <div>
               <div>
@@ -49,8 +52,12 @@ export default function CVDisplay({ CVDataArray, handleEdit }) {
           <div className="work-details">
             <div>
               <div> {CVDataArray[2].location}</div>
-              <div>
-                {CVDataArray[2].from} - {CVDataArray[2].to}
+              <div className="from-and-to">
+                <span className="from"> {CVDataArray[2].from} </span>
+                <p className="dash">
+                  <span>-</span>
+                </p>{" "}
+                <span className="to"> {CVDataArray[2].to}</span>
               </div>
             </div>
             <div>
