@@ -149,3 +149,9 @@ img {
     width: clamp(70vw, 75vw, 80vw);
   }
 }
+
+@media (min-width: 1000px) {
+  .container {
+    max-width: 60vw;
+  }
+}
