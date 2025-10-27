@@ -78,6 +78,8 @@ img {
 .edit-button {
   width: 90%;
   margin: 0 auto;
+  background-color: #0e374e;
+  color: white;
 }
 
 @media (min-width: 600px) {

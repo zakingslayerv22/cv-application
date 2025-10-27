@@ -3,6 +3,10 @@
   src: url(./assets/fonts/AlegreyaSansSC-Regular.ttf);
 }
 
+.form-container {
+  background-color: #eef1f3;
+}
+
 .form-body {
   font-size: 1.2rem;
   padding: 0.9rem;
@@ -12,6 +16,11 @@
   flex-direction: column;
   justify-content: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-shadow: 0px 9px 22px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 9px 22px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 22px 0px rgba(0, 0, 0, 0.75);
+  background-color: #0e374e;
+  color: white;
 }
 
 form {
@@ -49,7 +58,7 @@ label {
 .work-experience-info {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 20px;
   padding: 1rem;
 }
