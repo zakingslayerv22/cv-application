@@ -35,8 +35,8 @@ export default function CVForm() {
     <div className="form-container">
       <section className="form-body">
         <section className="heading">
-          <h2>Resume Generator</h2>
-          <p>Generate your resume in one click!</p>
+          <h2>Résumé Generator</h2>
+          <p>Generate your résumé in one click!</p>
           <p>All fields are required.</p>
         </section>
         <form action="" onSubmit={handleSubmit}>
